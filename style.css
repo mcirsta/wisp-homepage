@@ -32,7 +32,7 @@ a:hover {
 }
 
 /* Header */
-header {
+.header {
     background-color: #fffbe6;
     padding: 20px;
     text-align: center;
@@ -43,40 +43,75 @@ header {
 }
 
 /* Logo */
-.logo {
+.header__logo {
     width: 280px;
     max-width: 90%;
     margin-bottom: 20px;
 }
 
 /* Headings */
-h1 {
+.header__title {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-h2 {
+.section__title {
     font-size: 1.8rem;
     margin-bottom: 12px;
     padding-bottom: 6px;
     border-bottom: 2px solid #ddd;
 }
 
-h3 {
+.section__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.features__item-title {
     font-size: 1.2rem;
     margin-bottom: 8px;
 }
 
 /* Intro text */
-.lead {
+.header__lead {
     font-size: 1.2rem;
     color: #444;
     margin-bottom: 25px;
 }
 
+/* Navigation */
+.nav {
+    margin-top: 15px;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    color: #444;
+}
+
+.nav__link {
+    font-weight: bold;
+}
+
+
 /* Main layout */
-main {
+.main {
     max-width: 960px;
     margin: 0 auto;
     padding: 30px 20px;
@@ -87,16 +122,16 @@ main {
     margin-bottom: 50px;
 }
 
-.section p {
+.section__text {
     margin-bottom: 10px;
 }
 
 /* Lists */
-ul {
+.list {
     margin-left: 20px;
 }
 
-li {
+.list__item {
     margin-bottom: 6px;
 }
 
@@ -107,7 +142,7 @@ li {
     gap: 20px;
 }
 
-.feature {
+.features__item {
     flex: 1 1 250px;
     padding: 16px;
     background-color: #ffffff;
@@ -116,7 +151,7 @@ li {
 }
 
 /* Footer */
-footer {
+.footer {
     margin-top: 60px;
     padding: 20px 10px;
     text-align: center;
@@ -127,15 +162,15 @@ footer {
 
 /* Small screens */
 @media (max-width: 600px) {
-    h1 {
+    .header__title {
         font-size: 2.2rem;
     }
 
-    h2 {
+    .section__title {
         font-size: 1.5rem;
     }
 
-    .lead {
+    .header__lead {
         font-size: 1.05rem;
     }
 }

@@ -10,29 +10,36 @@
 
 <body>
 
-    <header>
-        <a href="index.html"><img src="wisp-logo.png" alt="Wisp Browser Logo" class="logo"></a>
-        <h1>Wisp Browser</h1>
-        <p class="lead">Fast, lightweight, simple internet browsing — beautifully minimal.</p>
-        <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="downloads.html">Downloads</a> | <a
-                href="documentation.html">Documentation</a> | <a href="contact.html">Contact</a></p>
+    <header class="header">
+        <a href="index.html"><img src="wisp-logo.png" alt="Wisp Browser Logo" class="header__logo"></a>
+        <h1 class="header__title">Wisp Browser</h1>
+        <p class="header__lead">Fast, lightweight, simple internet browsing — beautifully minimal.</p>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="downloads.html" class="nav__link">Downloads</a></li>
+                <li class="nav__item"><a href="documentation.html" class="nav__link">Documentation</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section id="download" class="section">
-            <h2>Stable Releases</h2>
-            <p>
+            <h2 class="section__title">Stable Releases</h2>
+            <p class="section__text">
                 Choose your platform:
             </p>
-            <ul>
-                <li><a href="#">Windows (x64)</a></li>
-                <li><a href="#">Windows XP (32bit)</a></li>
-                <li>macOS (Coming Soon)</li>
-                <li><a href="#">Linux (Qt source code)</a></li>
+            <ul class="list">
+                <li class="list__item"><a href="#">Windows (x64)</a></li>
+                <li class="list__item"><a href="#">Windows XP (32bit)</a></li>
+                <li class="list__item">macOS (Coming Soon)</li>
+                <li class="list__item"><a href="#">Linux (Qt source code)</a></li>
             </ul>
         </section>
 
-        <footer>
+        <footer class="footer">
             <p>© 2026 Wisp Browser Project</p>
         </footer>
 
