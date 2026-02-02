@@ -87,22 +87,25 @@ a:hover {
 
 .nav__list {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    text-align: center;
+    /* Ensures center alignment for inline-block items */
     margin: 0;
     padding: 0;
 }
 
 .nav__item {
+    display: inline-block;
     position: relative;
+    margin: 0 10px;
 }
 
 .nav__item:not(:last-child)::after {
     content: "|";
     position: absolute;
-    right: -10px;
+    right: -12px;
+    /* Adjusted for margin */
     color: #444;
+    top: 0;
 }
 
 .nav__link {
