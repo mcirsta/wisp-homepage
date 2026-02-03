@@ -187,3 +187,15 @@ a:hover {
         font-size: 1.05rem;
     }
 }
+/* Nav Icon */
+.nav__icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.nav__icon:hover {
+    opacity: 1;
+}
